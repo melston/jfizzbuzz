@@ -9,8 +9,10 @@ import java.util.stream.Stream;
 public class JFizzBuzz4a {
 
     public static void main(String[] args) {
+
         Function<Pair, Pair> do3 = UtilFns.genFB(3, "fizz");
         Function<Pair, Pair> do5 = UtilFns.genFB(5, "buzz");
+
         Stream.iterate(1, i -> i + 1)
                 .map(UtilFns::createPair)
                 .map(do3)

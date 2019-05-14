@@ -1,6 +1,6 @@
 package com.elsoft.jfizzbuzz;
 
-public class JFizzBuzz1 {
+public class JFizzBuzz1a {
 
     public static void main(String[] args) {
         for (int ii=1; ii< 21; ii++) {
