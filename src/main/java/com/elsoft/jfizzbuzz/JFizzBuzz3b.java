@@ -18,9 +18,11 @@ public class JFizzBuzz3b {
 
         Function<Pair, Pair> do3 = UtilFns.genFB(3, "fizz");
         Function<Pair, Pair> do5 = UtilFns.genFB(5, "buzz");
+        // etc.
 
         p = do3.apply(p);
         p = do5.apply(p);
+        // etc.
 
         return p.toString();
     }

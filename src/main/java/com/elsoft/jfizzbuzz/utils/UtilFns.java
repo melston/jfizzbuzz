@@ -7,7 +7,7 @@ public class UtilFns {
         return (Pair curr) -> (curr.value%div == 0) ? new Pair(curr.value, curr.acc + divStr) : curr;
     }
 
-    public static Pair createPair(int val) {
+    public static Pair createPair(Integer val) {
         return new Pair(val, "");
     }
 }

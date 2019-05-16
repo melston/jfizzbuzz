@@ -1,6 +1,5 @@
 package com.elsoft.jfizzbuzz;
 
-import java.util.function.Function;
 import com.elsoft.jfizzbuzz.utils.Pair;
 import com.elsoft.jfizzbuzz.utils.UtilFns;
 
@@ -10,10 +9,6 @@ public class JFizzBuzz3a {
         for (int ii=1; ii< 21; ii++) {
             System.out.println(calcFB(ii));
         }
-    }
-
-    private static Function<Pair, Pair> genFB(int div, String divStr) {
-        return (Pair curr) -> (curr.value%div == 0) ? new Pair(curr.value, curr.acc + divStr) : curr;
     }
 
     private static String calcFB(int val) {
