@@ -15,7 +15,7 @@ public class JFizzBuzz4a {
     public static void main(String[] args) {
 
         Stream.iterate(1, i -> i + 1)
-                .map(UtilFns::createPair)
+                .map((i) -> new Pair(i, ""))
                 .map(do3)
                 .map(do5)
                 .map(do7)
