@@ -8,7 +8,7 @@ public class JFizzBuzz2 {
         }
     }
 
-    private static String addStr(String acc, int div, String divStr, int value) {
+    private static String addStr(String acc, int value, int div, String divStr) {
         if (value%div == 0) return acc + divStr;
         else return acc;
     }
@@ -16,8 +16,10 @@ public class JFizzBuzz2 {
     private static String calcFB(int val) {
         String accStr = "";
 
-        accStr = addStr(accStr,3, "fizz", val);
-        accStr = addStr(accStr,5, "buzz", val);
+        accStr = addStr(accStr, val, 3, "fizz");
+        accStr = addStr(accStr, val, 5, "buzz");
+        accStr = addStr(accStr, val, 7, "bang");
+        accStr = addStr(accStr, val, 11, "boom");
 
         if (accStr.length() == 0) accStr = Integer.toString(val);
 
